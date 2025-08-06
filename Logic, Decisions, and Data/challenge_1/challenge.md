@@ -1,4 +1,4 @@
-# 012 CHALLENGE #1
+# CHALLENGE #1
 
 ## Instructions
 
