@@ -1,0 +1,13 @@
+### **My Report:**
+
+Today, I took on the "Modal Mayhem" challenge to solidify my understanding of DOM manipulation, event handling, and writing clean code. The goal was to build a fully functional modal window, and the journey taught me far more than just how to show and hide a box on a screen.
+
+My first attempt was all about getting the core functionality working. I started by selecting the necessary elements—the modal itself and the overlay. I knew I needed to avoid repeating code, so I immediately created two functions: `showModal` and `hideModal`. My initial logic was direct and to the point: I used `element.style.display` to toggle the visibility. I attached these functions to the "Show" and "Close" buttons, and to my satisfaction, it worked! Clicking the button brought up the modal, and the 'X' made it disappear. I even got the `keydown` event for the 'Escape' key working on the first try. It was a great feeling of success.
+
+Then came the first round of refinement. The feedback I received was to use `classList` to toggle a `.hidden` class instead of manipulating inline styles directly. At first, I didn't fully grasp the significance, since my code was already functional. But as I implemented the change, it clicked. By using `.classList.add('hidden')` and `.classList.remove('hidden')`, my JavaScript was no longer dictating the *styling*; it was simply managing the element's *state*. The CSS file remained the single source of truth for what "hidden" actually meant. This "Separation of Concerns" principle felt like a major step forward in my thinking.
+
+Eagerly, I refactored my code. I ran it, and... nothing. The browser console threw a `TypeError`, complaining that it couldn't add an event listener to `null`. This was a frustrating moment. I was sure my logic was sound. I scanned my code line by line, comparing it to the examples. Then I saw it—the kind of tiny bug that can drive you crazy. In my `querySelector` calls for the buttons, I had written `'show-modal'` instead of `'.show-modal'`. I had forgotten the dot to signify a class selector!
+
+Fixing that one character brought my entire script to life. It was a powerful lesson in precision and the importance of debugging. It’s the kind of mistake you only need to make once to remember forever.
+
+With the bug squashed, I applied one final polish. Instead of wrapping my function calls in an anonymous arrow function like `btn.addEventListener('click', () => { closeModal(); })`, I learned I could pass the function name directly: `btn.addEventListener('click', closeModal)`. It was a subtle change, but it made the code more concise and elegant.
