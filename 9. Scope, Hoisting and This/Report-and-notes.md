@@ -1,9 +1,5 @@
 ### **Session Debrief: Mastering JavaScript's Execution Context**
 
-**Date:** August 19, 2025
-**Prepared by:** Yassir Aykhlf
-**Subject:** A detailed report on understanding and applying core JavaScript concepts: Scope, Hoisting, and the `this` Keyword.
-
 #### **1. Introduction**
 
 Today's session marked a significant turning point in my JavaScript journey. The objective was to move beyond simply writing code that works and to deeply understand *why* it works. The focus was on the engine's behind-the-scenes behavior, specifically tackling the often-confusing topics of Scope, Hoisting, the Temporal Dead Zone (TDZ), and the dynamic nature of the `this` keyword. The session culminated in a practical challenge designed to expose common pitfalls and enforce modern best practices. This report documents my process, from initial analysis and debugging to a final, refactored solution.
