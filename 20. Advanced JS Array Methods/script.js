@@ -82,10 +82,12 @@ const isOrderFulfillable = function (orderId) {
 };
 
 const getAllProductIdsFromOrders = function () {
-    return customerOrders.flatMap((order) => order.items.map(product => product.productId));
+    return customerOrders.flatMap((order) =>
+        order.items.map((product) => product.productId)
+    );
 };
 
-const findLastSoldProductDetails = function() {
-	const lastOrder = customerOrders.at(-1)?.items.at(-1);
-	return lastOrder ? findProduct(lastOrder.productId) : undefined;
-}
+const findLastSoldProductDetails = function () {
+    const lastOrder = customerOrders.at(-1)?.items.at(-1);
+    return lastOrder ? findProduct(lastOrder.productId) : undefined;
+};
