@@ -194,5 +194,3 @@ const analytics = generateAnalytics(transactions, {
     customerTypes: ["premium", "regular"],
     dateRange: { start: "2024-01-01", end: "2024-01-31" },
 });
-
-console.log(analytics);
