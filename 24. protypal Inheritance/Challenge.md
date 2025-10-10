@@ -14,7 +14,7 @@ Ready? Let's start with the most common item in the store.
 
 ---
 
-## Task 1: The Basic Blueprint (A Quick Win)
+## Task 1: The Basic Blueprint
 
 **Goal:** Create a way to represent a standard physical book in our system.
 
